@@ -23,10 +23,10 @@
             text-align: center;
             margin-left: 500px;
             border-color: white;
-            border-width: thick;
+            border-width:thick;
             border-style: groove;
             width: 480px;
-            height: 585px;
+            height: 590px;
             padding: 20px;
             border-radius: 50px;        
         
@@ -59,12 +59,28 @@
         #operators{
             background-color: #F09D51
         }
+        
+        #clear{
+            width: 250px;
+            margin-top: 25px;
+            font-size: 40px;
+            letter-spacing: 10px;
+            font-style: italic;
+        }
+        
+        button:hover{
+            opacity: 50%
+        }
+        
+        #clear:hover{
+            opacity: 50%
+        }
     
     </style>
 </head>
 
 <body>
-    <h2>Math Calculator!</h2>
+    <h2>Ana and Mateo's Math Calculator!</h2>
     <div class="calculator">
         <table>
             <tr>
@@ -99,7 +115,7 @@
             </tr>
             <tr>
                 <td colspan="4">
-                    <input type="button" value="Clear" onclick="clear1()">
+                    <input id="clear" type="button" value="Clear" onclick="clear1()">
                 </td>
             </tr>
         </table>
