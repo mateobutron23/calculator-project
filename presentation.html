@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-image: url(main.jpeg);
+            background-size: cover;
+        }
+        .title{
+            text-align: center;
+            font-size: 65px; 
+            font-family: 'Acme', sans-serif;
+            color: white;
+            top: -800px;
+            position: relative;
+            animation-name: Calculator;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            letter-spacing: 2px;
+        }
+        @keyframes Calculator{
+            from{top:-800px;}
+            to{top:240px;}
+        }
+        .enter{
+            text-align: center;
+            margin-top: 250px;
+            font-size: 30px; 
+            opacity: 0;
+            animation-name: StartButton; 
+            animation-delay: 2s; 
+            animation-fill-mode: forwards;
+            font-family: 'Source Code Pro', monospace;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        @keyframes StartButton{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Ana and Mateo's Calculator</h1>
+    <div class="enter"><a href="calculator.html">Start Operating!</a></div>
+</body>
+</html>

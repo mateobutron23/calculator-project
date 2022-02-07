@@ -4,86 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculatordesign.css">
+    <script src="calculator.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Calculator</title>
-    <style>
-        h2{
-            font-family: 'Acme', sans-serif;
-            font-size: 40px;
-            text-align: center;
-            color: #313638;
-        }
-        body{
-            background-color: #E0DFD5;
-        }
-        .calculator{
-            background-color: #313638;
-            text-align: center;
-            margin-left: 485px;
-            border-color: white;
-            border-width:thick;
-            border-style: groove;
-            width: 480px;
-            height: 590px;
-            padding: 20px;
-            border-radius: 50px;        
-        
-        }
-        
-        button{
-            font-size: 50px;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 9px;
-            padding-top: 5px;
-            border-radius: 200px;
-            font-weight:bold;
-        }
-        input{
-            font-size: 50px;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            margin-top: 15px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-        }
-        td{
-            padding-top: 10px;
-        }
-        #total{
-            background-color: #E8E9EB
-        }
-    
-        #operators{
-            background-color: #F09D51
-        }
-        
-        #clear{
-            width: 250px;
-            margin-top: 25px;
-            font-size: 35px;
-            font-family: 'Source Code Pro', monospace;
-            letter-spacing: 5px;
-            background-color: #F26419;
-            color: white;
-        }
-        
-        button:hover{
-            opacity: 50%
-        }
-        
-        #clear:hover{
-            opacity: 80%;
-        }
-    
-    </style>
 </head>
 
 <body>
-    <h2>Ana and Mateo's Calculator!</h2>
     <div class="calculator">
         <table>
             <tr>
@@ -123,21 +52,5 @@
             </tr>
         </table>
     </div>
-    
-    <script>
-         function show(val){
-             document.getElementById("total").value+=val
-         }
-        
-        function operate(){
-             let x = document.getElementById("total").value
-             let y = eval(x)
-             document.getElementById("total").value = y
-         }
-        
-        function clear1(){
-             document.getElementById("total").value = ""
-         }
-    </script>
 </body>
 </html>
