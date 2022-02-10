@@ -64,3 +64,16 @@ button:hover{
 #clear:hover{
     opacity: 80%;
 }
+a{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: #313638;
+    
+}
+
+a:hover{
+    opacity: 60%;
+}
