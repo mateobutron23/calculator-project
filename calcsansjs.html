@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input name="input" type="text" id="total"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="calculator.input.value += '7'" name="seven"></td>
+                <td><input type="button" value="8" onclick="calculator.input.value += '8'" name="eight"></td>
+                <td><input type="button" value="9" onclick="calculator.input.value += '9'" name="nine"></td>
+                <td><input type="button" id= "operators" value="+" onclick="calculator.input.value += '+'" name="plus"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="4" onclick="calculator.input.value += '4'" name="four"></td>
+                <td><input type="button" value="5" onclick="calculator.input.value += '5'" name="five"></td>
+                <td><input type="button" value="6" onclick="calculator.input.value += '6'" name="six"></td>
+                <td><input type="button" id= "operators" value="-" onclick="calculator.input.value += '-'" name="minus"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="1" onclick="calculator.input.value += '1'" name="one"></td>
+                <td><input type="button" value="2" onclick="calculator.input.value += '2'" name="two"></td>
+                <td><input type="button" value="3" onclick="calculator.input.value += '3'" name="three"></td>
+                <td><input type="button" id= "operators" value="×" onclick="calculator.input.value += '*'" name="times"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="0" onclick="calculator.input.value += '0'" name="zero"></td>
+                <td><input type="button" value="." onclick="calculator.input.value += '.'" name="decimal"></td>
+                <td><input type="button" value="=" onclick="calculator.input.value = eval(calculator.input.value)" name="result"></td>
+                <td><input type="button" id= "operators" value="÷" onclick="calculator.input.value += '/'" name="division"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input id="clear" type="button" value="Clear" onclick="calculator.input.value = ''">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    <a href="presentation.html">🠐 Go Back</a>
+    <br>
+</body>
+</html>

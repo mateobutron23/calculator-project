@@ -1,0 +1,94 @@
+body{
+    background-color: #91D6EB;
+}
+
+.calculator{
+    background-color: #313638;
+    text-align: center;
+    margin-left: 485px;
+    border-color: white;
+    border-width:thick;
+    border-style: groove;
+    width: 480px;
+    height: 570px;
+    padding: 20px;
+    border-radius: 50px;  
+    margin-top: 60px;
+}
+        
+button{
+    font-size: 60px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    border-radius: 200px;
+    font-weight:bold;
+}
+
+input{
+    font-size: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+td{
+    padding-top: 8px;
+}
+
+#total{
+    background-color: #E8E9EB;
+    padding: 4px;
+    text-align: center; 
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+    
+#operators{
+    background-color: #F09D51;
+    font-weight:600;
+}
+        
+#clear{
+    width: 250px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 5px;
+    background-color: #F26419;
+    color: white;
+}
+        
+input:hover{
+    opacity: 80%;
+    box-shadow: 0 4px #565a5c;
+}
+#total:hover{
+    opacity: 100%
+}
+        
+#clear:hover{
+    opacity: 80%;
+}
+a{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: #313638;
+    
+}
+
+a:hover{
+    opacity: 60%;
+}
