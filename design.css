@@ -3,7 +3,7 @@ body{
 }
 
 .calculator{
-    background-color: #313638;
+    background-color: #5C5C5C;
     text-align: center;
     margin-left: 485px;
     border-color: white;
@@ -14,6 +14,7 @@ body{
     padding: 20px;
     border-radius: 50px;  
     margin-top: 60px;
+    box-shadow: 10px 10px 5px #717275;	   
 }
         
 button{
@@ -69,16 +70,19 @@ td{
 }
         
 input:hover{
-    opacity: 80%;
-    box-shadow: 0 4px #565a5c;
+    opacity: 75%;
+    box-shadow: 0 4px #7a7d80;
 }
+
 #total:hover{
     opacity: 100%
 }
         
 #clear:hover{
-    opacity: 80%;
+    opacity: 75%;
+    box-shadow: 0 4px #7a7d80;
 }
+
 a{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 25px;
