@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="calculatordesign.css">
-    <script src="calculator.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <script src="calculatorjs.js"></script>
     <title>Calculator</title>
 </head>
 
@@ -16,34 +16,34 @@
     <div class="calculator">
         <table>
             <tr>
-                <td colspan="4"><input type="text" id="total"></td>
+                <td colspan="4"><input name="input" type="text" id="total"></td>
             </tr>
             <tr>
-                <td><button onclick="show('7')">7</button></td>
-                <td><button onclick="show('8')">8</button></td>
-                <td><button onclick="show('9')">9</button></td>
-                <td><button id= "operators" onclick="show('+')">+</button></td>
-            </tr>
-            
-            <tr>
-                <td><button onclick="show('4')">4</button></td>
-                <td><button onclick="show('5')">5</button></td>
-                <td><button onclick="show('6')">6</button></td>
-                <td><button id= "operators" onclick="show('-')">-</button></td>
+                <td><input type="button" value="7" onclick="show('7')"></td>
+                <td><input type="button" value="8" onclick="show('8')"></td>
+                <td><input type="button" value="9" onclick="show('9')"></td>
+                <td><input type="button" id= "operators" value="+" onclick="show('+')"></td>
             </tr>
             
             <tr>
-                <td><button onclick="show('1')">1</button></td>
-                <td><button onclick="show('2')">2</button></td>
-                <td><button onclick="show('3')">3</button></td>
-                <td><button id= "operators" onclick="show('*')">×</button></td>
+                <td><input type="button" value="4" onclick="show('4')"></td>
+                <td><input type="button" value="5" onclick="show('5')"></td>
+                <td><input type="button" value="6" onclick="show('6')"></td>
+                <td><input type="button" id= "operators" value="-" onclick="show('-')"></td>
             </tr>
             
             <tr>
-                <td><button onclick="show('0')">0</button></td>
-                <td><button onclick="show('.')">.</button></td>
-                <td><button onclick="operate()">=</button></td>
-                <td><button id= "operators" onclick="show('/')">÷</button></td>
+                <td><input type="button" value="1" onclick="show('1')"></td>
+                <td><input type="button" value="2" onclick="show('2')"></td>
+                <td><input type="button" value="3" onclick="show('3')"></td>
+                <td><input type="button" id= "operators" value="×" onclick="show('*')"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="0" onclick="show('0')"></td>
+                <td><input type="button" value="." onclick="show('.')"></td>
+                <td><input type="button" value="=" onclick="operate()"></td>
+                <td><input type="button" id= "operators" value="÷" onclick="show('/')"></td>
             </tr>
             <tr>
                 <td colspan="4">
@@ -54,22 +54,5 @@
     </div>
     <a href="presentation.html">🠐 Go Back</a>
     <br>
- 
-<script>  
-function show(val){
-    document.getElementById("total").value+=val
-}
-        
-function operate(){
-    let x = document.getElementById("total").value
-    let y = eval(x)
-    document.getElementById("total").value = y
-}
-        
-function clear1(){
-    document.getElementById("total").value = ""
-}
-</script> 
-    
 </body>
 </html>
